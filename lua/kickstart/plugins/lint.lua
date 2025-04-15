@@ -5,7 +5,7 @@ return {
     cond = not vim.g.vscode,
     event = { 'BufReadPre', 'BufNewFile' },
     config = function()
-      local lint = require 'lint'
+      local lint = require('lint')
       lint.linters_by_ft = {
         markdown = { 'markdownlint' },
       }

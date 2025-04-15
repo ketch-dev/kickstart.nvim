@@ -86,7 +86,9 @@ vim.keymap.set({ 'n', 'v', 'o' }, 't', 'l', { noremap = true, silent = true })
 vim.keymap.set({ 'n', 'v', 'o' }, 'l', 'f', { noremap = true, silent = true })
 vim.keymap.set({ 'n', 'v', 'o' }, 'L', 'F', { noremap = true, silent = true })
 vim.keymap.set({ 'n', 'v', 'o' }, 'j', 't', { noremap = true, silent = true })
+vim.keymap.set({ 'n', 'v', 'o' }, 'J', 'T', { noremap = true, silent = true })
 vim.keymap.set({ 'n', 'v', 'o' }, 'h', 'r', { noremap = true, silent = true })
+vim.keymap.set({ 'n', 'v', 'o' }, 'H', 'R', { noremap = true, silent = true })
 
 -- Map Ctrl+Z to undo
 vim.keymap.set('n', '<C-z>', 'u', { noremap = true, silent = true })

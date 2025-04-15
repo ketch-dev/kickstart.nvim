@@ -33,10 +33,19 @@ return {
     auto_install = true, -- Autoinstall languages that are not installed
     highlight = {
       enable = true,
-      additional_vim_regex_highlighting = { 'ruby' }, -- Ruby depends on vim's regex highlighting system for indent rules. Add language to this list and disable indent for it below if you are experiencing weird indenting issues
+      additional_vim_regex_highlighting = {
+        'ruby',
+      }, -- Ruby depends on vim's regex highlighting system for indent rules. Add language to this list and disable indent for it below if you are experiencing weird indenting issues
     },
-    indent = { enable = true, disable = { 'ruby' } },
-    autotag = { enable = true },
+    indent = {
+      enable = true,
+      disable = {
+        'ruby',
+      },
+    },
+    autotag = {
+      enable = true,
+    },
   },
   -- There are additional nvim-treesitter modules that you can use to interact with nvim-treesitter. You should go explore a few and see what interests you:
   --  - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
