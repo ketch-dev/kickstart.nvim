@@ -12,7 +12,7 @@ return {
     -- - sd'   - [S]urround [D]elete [']quotes
     -- - sr)'  - [S]urround [R]eplace [)] [']
     require('mini.surround').setup {
-      mappings = { add = 'ua', delete = 'ud', find = 'uf', find_left = 'uF', highlight = 'uh', replace = 'ur', update_n_lines = 'un' },
+      mappings = { add = 'u', delete = 'du', find = 'lu', find_left = 'Lu', replace = 'hu', update_n_lines = 'nu', highlight = 'uh' },
     }
 
     if not vim.g.vscode then

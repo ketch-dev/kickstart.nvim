@@ -48,7 +48,7 @@ return {
         ['<C-p>'] = cmp.mapping.select_prev_item(), -- Select the [p]revious item. You can use ['<S-Tab>'] instead
         ['<C-b>'] = cmp.mapping.scroll_docs(-4), -- Scroll the documentation window [b]ack
         ['<C-f>'] = cmp.mapping.scroll_docs(4), -- Scroll the documentation window [f]orward
-        ['<Tab>'] = cmp.mapping.confirm { select = true }, -- Accept ([y]es) the completion. This will auto-import if your LSP supports it. This will expand snippets if the LSP sent a snippet. You can use ['<CR>'] instead
+        ['<CR>'] = cmp.mapping.confirm { select = true }, -- Accept ([y]es) the completion. This will auto-import if your LSP supports it. This will expand snippets if the LSP sent a snippet. You can use ['<CR>'] instead
         ['<C-Space>'] = cmp.mapping.complete {}, -- Manually trigger a completion from nvim-cmp.
         ['<C-l>'] = cmp.mapping(function() -- Move to the right of your snippet expansion location
           if luasnip.expand_or_locally_jumpable() then
@@ -74,4 +74,3 @@ return {
     }
   end,
 }
-
