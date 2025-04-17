@@ -15,11 +15,12 @@ return {
   opts = {
     window = {
       mappings = {
-        -- Disable default hjkl (optional)
-        -- ['h'] = 'none', -- Disable collapse (if unused)
-        ['j'] = 'none', -- Disable down
-        -- ['k'] = 'none', -- Disable up
-        ['l'] = 'none', -- Disable expand/open
+        ['<space>'] = 'none',
+
+        -- ['h'] = 'none',
+        ['j'] = 'none',
+        -- ['k'] = 'none',
+        ['l'] = 'none',
 
         -- Remap r/s/f/t to act like h/j/k/l
         ['r'] = 'close_node', -- Collapse directory (like 'h')
@@ -30,10 +31,10 @@ return {
         ['<C-n>'] = 'next_source',
 
         -- Restore original functions elsewhere (e.g., <Leader> keys)
-        ['<Leader>r'] = 'refresh', -- Original 'r' (refresh)
-        ['<Leader>s'] = 'split', -- Original 's' (split)
-        ['<Leader>f'] = 'filter', -- Original 'f' (filter)
-        ['<Leader>t'] = 'open_tab', -- Original 't' (open in tab)
+        -- ['<Leader>r'] = 'refresh', -- Original 'r' (refresh)
+        -- ['<Leader>s'] = 'split', -- Original 's' (split)
+        -- ['<Leader>f'] = 'filter', -- Original 'f' (filter)
+        -- ['<Leader>t'] = 'open_tab', -- Original 't' (open in tab)
 
         ['n'] = 'rename',
         ['y'] = 'copy_to_clipboard',
@@ -43,6 +44,7 @@ return {
         ['K'] = 'expand_all_nodes',
       },
     },
+    hide_root_node = true,
     filesystem = {
       hijack_netrw_behavior = 'open_default',
       group_empty_dirs = true,
@@ -58,10 +60,10 @@ return {
     },
     default_component_configs = {
       icon = {
-        folder_closed = '', -- Arrow right (closed folder)
-        folder_open = '', -- Arrow down (open folder)
-        folder_empty = '', -- Arrow right (empty folder)
-        folder_empty_open = '', -- Arrow down (empty open folder)
+        folder_closed = '',
+        folder_open = '',
+        folder_empty = '',
+        folder_empty_open = '',
       },
     },
   },

@@ -47,7 +47,6 @@ vim.keymap.set({ 'n', 'v', 'i' }, '<Up>', '<Nop>')
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>') -- Clear highlights on search when pressing <Esc> in normal mode
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }) -- Might not work in some terminals/tmux
-vim.keymap.set('n', '<space><space>x', '<cmd>source %<CR>') -- run current file
 vim.keymap.set('v', 'p', 'P') -- Make text replace to not modify clipboard
 
 -- Move focus. See ':help wincmd'
